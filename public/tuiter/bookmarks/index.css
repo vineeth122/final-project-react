@@ -1,0 +1,158 @@
+body {
+    font-family: "Arial";
+    background-color: black;
+    color: white;
+    border: rgb(47, 51, 54);
+    /*margin: 25%;*/
+    width: 50%;
+
+}
+
+.wd-blocka {
+    font-family: "Arial Black";
+    color: white;
+    font-size: 20px;
+    padding: 0 12px 0 16px;
+
+}
+
+.wd-handlea {
+    font-size: 13px;
+    color: lightgray;
+    padding: 0 12px 0 16px;
+
+}
+.wd-bordera {
+    border: 1px solid lightgray;
+}
+
+.wd-option-title {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(29, 161, 242);
+}
+.wd-blockb {
+    padding:  0 12px 0 16px;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    float: left;
+
+}
+
+.wd-author {
+    color: white;
+    font-size: 15px;
+}
+
+.wd-handle-user {
+    color: gray;
+    font-size: 15 px;
+}
+
+.wd-blockd {
+    color: white;
+    font-size: 15px;
+    width: 506px;
+    margin-bottom: 12px;
+    padding-left: 75px;
+    text-align: justify;
+}
+
+.wd-image-parent{
+    /*padding:  0 12px 0 16px;*/
+    margin-left: 75px;
+    width: 524px;
+    height: 520px;
+    /*padding-left: 75px;*/
+    /*padding:  0 12px 0 16px;*/
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+.wd-image-parent2{
+    padding:  0 12px 0 16px;
+    margin-left: 75px;
+    width: 524px;
+    height: 520px;
+    /*padding-left: 75px;*/
+    /*padding:  0 12px 0 16px;*/
+    border-radius: 20px;
+    border: 1px solid gray;
+
+    justify-content: space-between;
+
+}
+
+.wd-book-image {
+    width: 504px;
+    height: 264px;
+    /*padding-left: 75px;*/
+    padding:  10px 10px 10px 0px;*/
+    /*border-radius: 20px;*/
+    /*border: 1px solid gray;*!*/
+}
+
+
+.wd-image-title {
+    padding: 12px 12px 12px 12px;
+    /*padding-left: 0px;*/
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    /*max-width: 480px;*/
+    /*border: 1px solid gray;*/
+}
+
+.wd-image-title2 {
+    padding: 12px 12px 12px 12px;
+
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    /*max-width: 480px;*/
+    /*border: 1px solid gray;*/
+}
+
+.wd-image-content {
+    margin-top: 5px;
+    color: lightgray;
+    padding: 12px 12px 12px 12px;
+    font-size: 15px;
+}
+
+.wd-image-content2 {
+    margin-top: 5px;
+    color: lightgray;
+    padding: 12px 12px 12px 12px;
+    font-size: 15px;
+}
+
+.wd-icon-list{
+    padding-top: 0px;
+    color: lightgray;
+    list-style: none;
+    display: flex;
+}
+
+.wd-single-icon {
+    margin-right: 10px;
+}
+
+
+.wd-icon-container{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: lightgray;
+}
+
+.wd-number {
+    color: lightgray;
+    margin-left: 12px;
+}
+
+.fa-heart {
+    color: red;
+
+}
