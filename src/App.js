@@ -6,7 +6,9 @@ import HelloWorld from "./labs/a6/hello-world";
 import Tuiter from "./tuiter";
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
-
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+config.autoAddCss = false;
 function App() {
   return (
       <BrowserRouter>
@@ -14,7 +16,7 @@ function App() {
           <Routes>
               <Route index element={<Labs/>}/>
               <Route path="/hello" element={<HelloWorld/>}/>
-              <Route path="/tuiter" element={<Tuiter/>}/>
+              <Route path="/tuiter/*" element={<Tuiter/>}/>
           </Routes>
       </div>
     </BrowserRouter>

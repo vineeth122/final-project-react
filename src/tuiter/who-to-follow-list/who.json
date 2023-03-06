@@ -1,0 +1,16 @@
+[{
+  "_id": 123,
+  "avatarIcon": "javaicon.png",
+  "userName": "Java",
+  "handle": "Java"
+}, {
+  "_id": 345,
+  "avatarIcon": "relativity.png",
+  "userName": "Relativity Space",
+  "handle": "relativityspace"
+}, {
+  "_id": 456,
+  "avatarIcon": "virgin-1.jpg",
+  "userName": "Virgin Galactic",
+  "handle": "virgingalactic"
+}]
