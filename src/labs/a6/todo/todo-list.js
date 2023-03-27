@@ -1,6 +1,5 @@
 import TodoItem from "./todo-item";
 import todos from "./todos.json";
-import {useState} from "react";
 const TodoList = () => {
     return(
        <>
