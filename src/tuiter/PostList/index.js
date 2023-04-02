@@ -1,17 +1,30 @@
-import React from "react";
-import {useSelector} from "react-redux";
+import React, {useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
 import Postiteml from "./Postitem.js";
+import {findTuitsThunk}
+    from "../../services/tuits-thunks";
 
 
 
 const PostListSum = () => {
-    const postl= useSelector(state => state.tuitsl)
+
+    const {tuits, loading} = useSelector(state => state.tuitsData)
+    const dispatch = useDispatch();
+    useEffect(() => {dispatch(findTuitsThunk())}, [])
     return(
         <ul className="list-group">
             {
-                postl.map(post =>
+                loading &&
+                <li className="list-group-item">
+                    Loading...
+                </li>
+            }
+            {
+
+
+                tuits.map(tuit =>
                     <Postiteml
-                        key={post._id} post1={post}/> )
+                        key={tuit._id} post1={tuit}/> )
             }
         </ul>
     );

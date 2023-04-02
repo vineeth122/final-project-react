@@ -14,7 +14,7 @@ import tuitsReducer from "./tuits/tuits-reducer";
 import tuitslReducer from "./tuits/tuitsl-reducer";
 import userslReducer from "./tuits/uinforeducer";
 
-const store = configureStore({reducer: {who: whoReducer,tuits: tuitsReducer,tuitsl: tuitslReducer,usersl: userslReducer}});
+const store = configureStore({reducer: {who: whoReducer,tuitsData: tuitslReducer,usersl: userslReducer,tuits: tuitsReducer}});
 
 function Tuiter() {
     return (
