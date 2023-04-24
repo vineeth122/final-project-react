@@ -1,0 +1,15 @@
+[{
+  "_id": 123,
+  "city": "Boston",
+  "comment": "Great city with fantastic vibes on the east coast of USA",
+  "rating":4.5,
+  "author": "Bob"
+},
+  {
+    "_id": 234,
+    "city": "New York",
+    "comment": "Great city with fantastic vibes on the east coast of USA",
+    "rating": 5,
+    "author": "Mark"
+  }
+]

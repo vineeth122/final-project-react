@@ -13,10 +13,17 @@ import {Provider} from "react-redux";
 import tuitsReducer from "./tuits/tuits-reducer";
 import tuitslReducer from "./tuits/tuitsl-reducer";
 import userslReducer from "./tuits/uinforeducer";
+// import placeslReducer from "./tuits/placesl-reducer";
+import PlaceslReducer from "./tuits/placesl-reducer";
+import HreviewsReducer from "./tuits/hreviews-reducer";
+import { useLocation } from "react-router-dom";
 
-const store = configureStore({reducer: {who: whoReducer,tuitsData: tuitslReducer,usersl: userslReducer,tuits: tuitsReducer}});
+const store = configureStore({reducer: {who: whoReducer,tuitsData: tuitslReducer,usersl: userslReducer,tuits: tuitsReducer, places: PlaceslReducer, hreviewsl: HreviewsReducer}});
 
 function Tuiter() {
+    const location = useLocation();
+    const { pathname } = location;
+    const columncls = pathname === "/tuiter/home" ? "col-xxl col-xl-10 col-lg-7 col-md col-sm" : "col-xxl col-xl col-lg-7 col-md col-sm";
     return (
         <Provider store={store}>
                 <div className="container pt-1">
@@ -25,7 +32,12 @@ function Tuiter() {
                             <NavigationSidebar active="explore"/>
                         </div>
 
-                        <div className="col-xxl-6 col-xl-6 col-lg-7 col-md col-sm">
+                        {/*<div className="col-xxl col-xl-10 col-lg-7 col-md col-sm">*/}
+                        {/*    <Routes>*/}
+                        {/*        <Route path="home"    element={<HomeComponent/>}/>*/}
+                        {/*    </Routes>*/}
+                        {/*</div>*/}
+                        <div className={columncls}>
                             <Routes>
                                 <Route path="home"    element={<HomeComponent/>}/>
                                 <Route path="explore" element={<ExploreComponent/>}/>
@@ -38,7 +50,7 @@ function Tuiter() {
 
                         <div className="d-none d-lg-block  col-xxl  col-xl col-lg mt-3 wd-width">
                             <Routes>
-                                <Route path="home"    element={<PostSummaryList/>}/>
+                                {/*<Route path="home"    element={<PostSummaryList/>}/>*/}
                                 <Route path="explore" element={<WhoToFollowList/>}/>
                                 <Route path="profile" element={<WhoToFollowList/>}/>
                                 <Route path="edit-profile" element={<WhoToFollowList/>}/>
